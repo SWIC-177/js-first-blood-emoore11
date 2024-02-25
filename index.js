@@ -1,8 +1,8 @@
 function addGreet(name) {
-return 'Hello ' + name + '!';
+return `Hello ${name}!`;
 }
 
-const greeting = addGreet('Erina');
+const greeting = addGreet("Erina");
  
-console.log(greeting); 
-
+console.log(`Hello, my name is ${greeting} 
+I have a dog named Moose`);
