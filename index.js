@@ -1,35 +1,24 @@
-const people = [
-  {
-    name: "John",
-    age: 17,
-  },
-  {
-    name: "Jane",
-    age: 20,
-  },
-  {
-    name: "Mary",
-    age: 25,
-  },
-  {
-    name: "Peter",
-    age: 30,
-  },
-  {
-    name: "Paul",
-    age: 35,
-  },
-];
+// Example of using arrow functions
 
-function verifyAdulthood(personName, personAge) {
-  if (personAge >= 18) return `Welcome, ${personName}!`;
+const add = (a, b) => a + b;
 
-  return `You are not old enough to enter, ${personName}.`;
-}
+console.log(add(2, 3)); // Output: 5
 
-for (let i = 0; i < people.length; i += 1) {
-  const person = people[i];
-  const adultMessage = verifyAdulthood(person.name, person.age);
+// Example of using function as an argument
 
-  console.log(adultMessage);
-}
+const multiply = (a, b) => a * b;
+
+const calculate = (operation, a, b) => operation(a, b);
+
+console.log(calculate(add, 2, 3)); // Output: 5
+console.log(calculate(multiply, 2, 3)); // Output: 6
+
+// Example of using a function to return another function
+
+const createMultiplier = (factor) => (number) => number * factor;
+
+const double = createMultiplier(2);
+console.log(double(5)); // Output: 10
+
+const triple = createMultiplier(3);
+console.log(triple(5)); // Output: 15
