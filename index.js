@@ -22,3 +22,17 @@ console.log(double(5)); // Output: 10
 
 const triple = createMultiplier(3);
 console.log(triple(5)); // Output: 15
+
+function scoreIncrementor(incrementAmount, score) {
+  return score + incrementAmount;
+}
+
+// Example usage for basketball
+const basketballScore = 0;
+const newBasketballScore = scoreIncrementor(1, basketballScore); // Increment by 1️⃣
+console.log(newBasketballScore); // Output: 1️⃣
+
+// Example usage for football
+const footballScore = 0;
+const newFootballScore = scoreIncrementor(6, footballScore); // Increment by 6️⃣
+console.log(newFootballScore); // Output: 6️⃣
