@@ -9,7 +9,9 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
+  plugins: ["eslint-comments"],
   rules: {
+    "eslint-comments/require-description": "error",
     "no-console": [
       "warn",
       {
